@@ -84,3 +84,6 @@ Columns in order (> denotes engineered feature)
 	>time_of_day (categorical scheduled departure time)
 	*destination_airport
 
+Challenges
+	*Large dataset (how many rows?)
+
