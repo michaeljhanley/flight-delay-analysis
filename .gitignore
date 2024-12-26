@@ -4,6 +4,8 @@ __pycache__/
 *.pyo
 env/
 venv/
+.env
+*.env
 
 # Jupyter Notebook
 .ipynb_checkpoints/
@@ -18,10 +20,13 @@ venv/
 
 # Data files
 data/raw/
-data/processed/
+data/cleaned/
+.csv
+*.csv
 
 # OS-specific
 .DS_Store
+.app
 
 # Logs
 *.log
