@@ -17,3 +17,4 @@ tqdm
 pyyaml
 requests
 beautifulsoup4
+python-dotenv
