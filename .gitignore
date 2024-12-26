@@ -27,6 +27,8 @@ data/cleaned/
 # OS-specific
 .DS_Store
 .app
+.wflow
+*.wflow
 
 # Logs
 *.log
