@@ -21,3 +21,4 @@ python-dotenv
 nbqa
 black
 ruff
+polars
