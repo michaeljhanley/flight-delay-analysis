@@ -1,5 +1,7 @@
 In-progress process documentation notes
 
+NOTE: This is a living progress tracker. As this info gets added to notebooks/other documents and committed to GitHub, it'll be removed from this document.
+
 Dataset description (data itself, source)
 
 Business Questions
@@ -40,16 +42,6 @@ Features to be engineered:
 	*mean_departure_delay_by_hour (float64): Aggregates delays by hour_of_day w/ mean function
 	*peak_hour_flag (int64): Derived from time_of_day. 1 if time of day is Early Morning or Evening, else 0
 	*total_delay (float64): total delay caused by all factors
-	
-
-Cross-validation opportunities
-
-	*Check that actual departure time - scheduled departure time = departure delay so that the actual departure time is never earlier than the scheduled departure time
-	*Add delay categories to ensure they equal departure delay column
-	*Check that wheels off time is always equal to or later than actual departure time, because the flight can't take off before it starts rolling on the runway
-	*Taxi_out time always needs to be non-negative, and cannot be greater than the difference between wheels-off time and actual departure time, because taxi time is just a small portion of the time from departure to takeoff (calculated by the aforementioned difference
-	*The same tail number should not appear with a conflicting departure datetime
-	*Ensure all date and timestamps are formatted consistently
 
 Columns in order (> denotes engineered feature)
 
