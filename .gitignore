@@ -6,6 +6,8 @@ env/
 venv/
 .env
 *.env
+.parquet
+*.parquet
 
 # Jupyter Notebook
 .ipynb_checkpoints/
