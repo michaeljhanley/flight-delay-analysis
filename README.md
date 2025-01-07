@@ -5,8 +5,8 @@ This project demonstrates end-to-end data analysis capabilities through the anal
 
 ## Research Questions & Hypotheses
 1. Peak Hours vs. Delays
-  - Question: Are flights scheduled during peak hours (early morning, evening) more likely to experience departure delays than those during off-peak hours (mid-morning, early afternoon)?
-  - Hypothesis: Peak hour flights experience higher delay frequencies
+  - Question: Are flights scheduled during high-volume hours (defined as hours with flight volume > mean + 1 SD) more likely to experience departure delays than those during lower-volume hours?
+  - Hypothesis: Flights during high-volume hours experience higher delay frequencies than flights during lower-volume hours
 2. Aircraft Delay Propagation
   - Question: Does the proportion of delays caused by late aircraft arrivals vary significantly between early morning and late evening flights?
   - Hypothesis: Significant variation exists between these time periods
