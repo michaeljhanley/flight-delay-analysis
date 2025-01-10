@@ -1,91 +1,40 @@
-# SeaTac Flight Delay Analysis Project [WIP]
+# Statistical Analysis of Flight Delays at SeaTac Airport [WIP]
 
-## Project Overview
-This project demonstrates end-to-end data analysis capabilities through the analysis of Alaska Airlines flight departure delays from Seattle-Tacoma International Airport (SEA) during 2023. Using data from the Bureau of Transportation Statistics (BTS), this analysis investigates specific operational questions to optimize flight scheduling and reduce delays. The project leverages both R and Python for comprehensive statistical analysis and visualization.
+## Research Objective
+Statistical investigation of operational and temporal factors affecting Alaska Airlines flight delays at Seattle-Tacoma International Airport (SEA) during 2023. This analysis employs both descriptive and inferential statistics to identify patterns in departure delays and evaluate specific operational hypotheses.
 
-## Research Questions & Hypotheses
-1. Peak Hours vs. Delays
-  - Question: Are flights scheduled during high-volume hours (defined as hours with flight volume > mean + 1 SD) more likely to experience departure delays than those during lower-volume hours?
-  - Hypothesis: Flights during high-volume hours experience higher delay frequencies than flights during lower-volume hours
-2. Aircraft Delay Propagation
-  - Question: Does the proportion of delays caused by late aircraft arrivals vary significantly between early morning and late evening flights?
-  - Hypothesis: Significant variation exists between these time periods
-3. Delay Pattern Optimization
-  - Question: What times of day consistently have the longest delays, and how can Alaska Airlines adjust staffing or flight schedules to mitigate this?
-4. Taxi-Out Time Assessment
-  - Question: Are departure delays higher for flights scheduled with minimal taxi-out times?
-  - Hypothesis: Minimal taxi-out times correlate with higher delays
-5. Schedule Buffer Analysis
-  - Question: Where can departure times be adjusted or scheduling buffers increased to potentially reduce cascading delays?
+## Research Questions & Statistical Hypotheses
+1. **Peak Hour Impact Analysis**
+  - H₀: No significant difference in delay probability between peak and non-peak hours
+  - H₁: Flights during peak hours (volume > μ + σ) show higher delay probability
 
-## Current Status
-✅ **Completed**:
-- Initial data cleaning and preprocessing
-  - Standardization of timestamp formats
-  - Handling of missing delay values
-  - Validation of flight codes and routes
-  - Cross-referencing with airport metadata
-- In-notebook documentation of cleaning methodology
-- Clean dataset ready for analysis
+2. **Delay Propagation Study**
+  - H₀: Equal proportions of late-aircraft delays across time periods
+  - H₁: Significant variation in delay propagation between morning/evening flights
 
-🔄 **In Progress**:
-- Feature engineering
-  - Seasonal indicators
-  - Time-of-day categorization
-  - Weather condition integration
-  - Holiday period flagging
+3. **Schedule Optimization Analysis**
+  - Primary focus: Temporal patterns in delay duration
 
-📅 **Planned**:
-- Exploratory data analysis
-  - Delay patterns by time of day/week/month
-  - Impact of seasonal variations
-  - Route-specific delay analysis
-- Statistical modeling of delay factors
-- Interactive delay visualization dashboard
-- Infographic design for key findings
-- Script refactoring & optimization
+4. **Taxi-Out Time Impact**
+  - H₀: No correlation between taxi-out duration and departure delays
+  - H₁: Shorter scheduled taxi times correlate with increased delays
+
+## Status
+✅ **Data Preprocessing**
+- Temporal standardization
+- Missing value imputation
+- Data validation protocols
+
+🔄 **Current Phase: Feature Engineering**
+
+
+📅 **Planned Analysis**
+
 
 ## Data Source
-The dataset is sourced from the Bureau of Transportation Statistics (BTS) and includes:
-- Flight departure data for Alaska Airlines from SEA
-- Temporal coverage: January - December 2023
-- Key metrics: scheduled departure times, actual departure times, delay durations
+Bureau of Transportation Statistics (BTS) dataset:
+- Population: Alaska Airlines SEA departures (2023)
+- N = [sample size]
+- Key variables: Scheduled/actual departures, delay durations
 
-## Data Cleaning Methodology
-The data cleaning phase involved:
-1. Standardization of timestamp formats across all departure records
-2. Validation of flight codes
-3. Handling of missing delay values
-4. More to be documented
-
-## Tools & Technologies
-- Python
-  - Pandas for data manipulation
-  - NumPy for numerical operations
-  -   Jupyter Notebooks for process documentation
-  - Matplotlib/Seaborn for upcoming visualizations
-- R for analysis
-- Affinity Designer for infographic design
-
-## Getting Started
-1. Clone this repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Navigate to the `notebooks` directory to view the data cleaning process
-
-## Future Development
-This project is actively being developed. The next major milestone is feature engineering, which will include deriving meaningful features from temporal data and integrating weather information.
-
-## Contributing
-While this is primarily a portfolio project, I welcome feedback and suggestions! Please feel free to open an issue or submit a pull request.
-
-## License
-TBD
-
-## Contact
-Email: michaelhanley11 (at) gmail.com
-
----
-*Note: This project is under active development. Each phase will be documented as completed.*
+## Repository Structure
